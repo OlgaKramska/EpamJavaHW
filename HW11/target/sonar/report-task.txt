@@ -1,0 +1,5 @@
+projectKey=com.epam:hw11
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.epam:hw11
+ceTaskId=AVShMnpa2qesnySta46Z
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVShMnpa2qesnySta46Z

@@ -1,0 +1,16 @@
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\model\User.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\dao\RepositoryDao.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\util\PropertiesReader.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\model\MetaData.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task1\repository\UserDBRepository.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\dao\impl\CookieDao.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\dao\impl\UserDao.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task1\repository\TableDB.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\model\Cookie.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\exc\DataAccessException.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task1\DBConnectionManager.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task1\repository\MetaDataDBRepository.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task1\repository\CookieDBRepository.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\util\ConnectionPool.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\dao\DaoFactory.java
+D:\projects\EpamJavaHW\HW11\src\main\java\com\epam\task2\dao\impl\MetaDataDao.java
