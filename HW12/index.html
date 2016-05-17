@@ -6,8 +6,8 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/cookieStyle.css">
 <link rel="stylesheet" href="css/jquery-ui.css">
-<script src="js/jquery-2.2.3.js"></script>
-<script src="js/jquery-ui.js"></script>
+<script src="js/lib/jquery-2.2.3.min.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/loginCheck.js"></script>
 <script src="js/randomPrediction.js"></script>
 <body>
@@ -15,7 +15,7 @@
 
 <div align="center">
     <p><b>LogIn to see your predictions</b></p>
-    <form id="login" action="predictions_table.html" method="post">
+    <form id="login" action="predictions.html" method="post">
         <input id="username" type="text" min="3" max="25" placeholder="username"/>
         <input id="password" type="password" min="6" max="40" placeholder="password"/>
         <p>
@@ -33,6 +33,6 @@
         <span class="ui-button-text">Random prediction</span>
     </button>
 </p>
-<div id="prediction" align="center"></div>
+<div id="random-prediction" align="center"></div>
 </body>
 </html>

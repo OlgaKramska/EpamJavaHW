@@ -2,52 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbbd518-b500-403f-a3f5-f538e18883e4" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\HW11.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\model\Cookie.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\model\MetaData.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\model\User.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task1\DBConnectionManager.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task1\repository\CookieDBRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task1\repository\MetaDataDBRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task1\repository\TableDB.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task1\repository\UserDBRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\dao\DaoFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\dao\RepositoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\dao\impl\CookieDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\dao\impl\MetaDataDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\dao\impl\UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\exc\DataAccessException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\util\ConnectionPool$PoolCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\util\ConnectionPool$PoolConnection.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\util\ConnectionPool.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\com\epam\task2\util\PropertiesReader.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\classes\database.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\hw11-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\sonar\report-task.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\com\epam\task1\UserDBRepositoryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\com\epam\task2\CookieDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\com\epam\task2\MetaDataDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\com\epam\task2\UserDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\h2.sql" afterPath="" />
-      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW11\target\test-classes\set.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/util/ConnectionPool.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/util/ConnectionPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/repository/CookieDBRepository.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/repository/CookieDBRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/CookieDao.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/CookieDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/CookieDaoTest.java" afterPath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/CookieDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/DaoFactory.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/DaoFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/MetaDataDao.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/MetaDataDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/MetaDataDaoTest.java" afterPath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/MetaDataDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/repository/UserDBRepository.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/repository/UserDBRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task1/UserDBRepositoryTest.java" afterPath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task1/UserDBRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/UserDao.java" afterPath="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/dao/impl/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/UserDaoTest.java" afterPath="$PROJECT_DIR$/HW11/src/test/java/com/epam/task2/UserDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW11/pom.xml" afterPath="$PROJECT_DIR$/HW11/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW12/js/lib/jquery-2.2.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW12/js/lib/jquery-ui.min.js" />
+      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW12\js\jquery-2.2.3.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\EpamJavaHW\HW12\js\jquery-ui.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW12/css/cookieStyle.css" afterPath="$PROJECT_DIR$/HW12/css/cookieStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW12/index.html" afterPath="$PROJECT_DIR$/HW12/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HW12/registration.html" afterPath="$PROJECT_DIR$/HW12/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\projects\EpamJavaHW\HW12\css\resorces\background.jpg" afterPath="$PROJECT_DIR$/HW12/images/background.jpg" />
+      <change type="MOVED" beforePath="D:\projects\EpamJavaHW\HW12\predictions_table.html" afterPath="$PROJECT_DIR$/HW12/predictions.html" />
     </list>
     <ignored path="EpamJavaHW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,41 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="jquery-ui.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW12/css/jquery-ui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cookieStyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW12/css/cookieStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.609319">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW12/registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginCheck.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW12/js/loginCheck.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registrationCheck.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW12/js/registrationCheck.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.9444444">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -161,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/model/Cookie.java" />
         <option value="$PROJECT_DIR$/HW11/src/main/java/com/epam/task2/DAO.java" />
         <option value="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/UsersHandlerFomDB.java" />
         <option value="$PROJECT_DIR$/HW11/src/main/java/com/epam/task1/model/User.java" />
@@ -207,11 +150,12 @@
         <option value="$PROJECT_DIR$/HW12/js/delPrediction.js" />
         <option value="$PROJECT_DIR$/HW12/js/addCookie.js" />
         <option value="$PROJECT_DIR$/HW12/js/loginCheck.js" />
-        <option value="$PROJECT_DIR$/HW12/index.html" />
         <option value="$PROJECT_DIR$/HW12/predictions_table.html" />
         <option value="$PROJECT_DIR$/HW12/js/registrationCheck.js" />
-        <option value="$PROJECT_DIR$/HW12/registration.html" />
         <option value="$PROJECT_DIR$/HW12/css/cookieStyle.css" />
+        <option value="$PROJECT_DIR$/HW12/index.html" />
+        <option value="$PROJECT_DIR$/HW12/registration.html" />
+        <option value="$PROJECT_DIR$/HW12/predictions.html" />
       </list>
     </option>
   </component>
@@ -392,7 +336,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,10 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resorces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,10 +393,11 @@
       <recent name="D:\projects\EpamJavaHW" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\EpamJavaHW\HW12\js\lib" />
+      <recent name="D:\projects\EpamJavaHW\HW12\images" />
       <recent name="D:\projects\EpamJavaHW\HW12\css\resorces" />
       <recent name="D:\projects\EpamJavaHW\HW12\css" />
       <recent name="D:\projects\EpamJavaHW\HW12" />
-      <recent name="D:\projects\EpamJavaHW\HW12\js" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.epam" />
@@ -745,7 +690,7 @@
       <workItem from="1462874802339" duration="6421000" />
       <workItem from="1462991166389" duration="4823000" />
       <workItem from="1463055491988" duration="1438000" />
-      <workItem from="1463225920825" duration="52457000" />
+      <workItem from="1463225920825" duration="55728000" />
     </task>
     <task id="LOCAL-00001" summary="First Homework">
       <created>1456695693356</created>
@@ -787,7 +732,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539431000" />
+    <option name="totallyTimeSpent" value="542702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,7 +744,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1138,14 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW12/js/jquery-2.2.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="5009" column="4" selection-start-line="5009" selection-start-column="4" selection-end-line="5009" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW10/dml/insert_data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.732143">
@@ -1181,11 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW12/css/resorces/background.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW12/js/addCookie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2491039">
@@ -1196,52 +1128,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW12/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14285715">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/HW12/images/background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW12/predictions_table.html">
+    <entry file="file://$PROJECT_DIR$/HW12/js/lib/jquery-2.2.3.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7669173">
-          <caret line="41" column="4" selection-start-line="38" selection-start-column="0" selection-end-line="41" selection-end-column="4" />
+        <state vertical-scroll-proportion="-0.096045196">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#input#2;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW12/js/loginCheck.js">
+    <entry file="file://$PROJECT_DIR$/HW12/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.8533835">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW12/js/registrationCheck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33512545">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW12/js/loginCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27419356">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW12/predictions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2236842">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW12/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.12781955">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW12/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW12/css/cookieStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.609319">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.9444444">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>

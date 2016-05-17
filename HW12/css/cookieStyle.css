@@ -1,5 +1,5 @@
 body{
-    background-image: url("resorces/background.jpg");
+    background-image: url("../images/background.jpg");
     font-family: Verdana,Arial,sans-serif;
 }
 
@@ -25,8 +25,13 @@ td.registration-form{
     color: red;
 }
 
-#prediction{
+#random-prediction{
     color: navy;
     text-shadow: 3px 3px 5px #000000;
     font-size: 250%;
+}
+
+#dialog-submit{
+    position:absolute;
+    top:-1000px;
 }
