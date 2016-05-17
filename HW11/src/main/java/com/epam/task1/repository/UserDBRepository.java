@@ -32,10 +32,9 @@ public class UserDBRepository {
     }
 
     public List<User> getAll() {
-        ResultSet resultSet;
         List<User> users = new ArrayList<>();
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY)) {
-            resultSet = preparedStatement.executeQuery();
+        try (Statement preparedStatement = connection.createStatement();
+            ResultSet resultSet = preparedStatement.executeQuery(SELECT_QUERY)) {
             while (resultSet.next()) {
                 users.add(new User(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4)));
             }
@@ -63,12 +62,12 @@ public class UserDBRepository {
     }
 
     public User getUser(int id) {
-        ResultSet resultSet;
         try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY_BY_ID)) {
             preparedStatement.setInt(1, id);
-            resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                return new User(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4));
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return new User(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -91,11 +90,8 @@ public class UserDBRepository {
     }
 
     public void updateUser(String oldUserName, String newUserName) throws SQLException {
-        String query = SELECT_QUERY;
-        ResultSet resultSet;
-        try (PreparedStatement preparedStatement = connection.prepareStatement(query,
-                ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
-            resultSet = preparedStatement.executeQuery();
+        try (Statement preparedStatement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            ResultSet resultSet = preparedStatement.executeQuery(SELECT_QUERY)) {
             while (resultSet.next()) {
                 if (oldUserName.equals(resultSet.getString("USERNAME"))) {
                     resultSet.updateString("USERNAME", newUserName);

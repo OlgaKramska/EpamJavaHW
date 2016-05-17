@@ -38,9 +38,10 @@ public class MetaDataDao implements RepositoryDao<MetaData, Integer> {
             preparedStatement.setInt(1, metaData.getUserId());
             preparedStatement.setInt(2, metaData.getCookieId());
             preparedStatement.executeUpdate();
-            ResultSet resultSet = preparedStatement.getGeneratedKeys();
-            if (resultSet.next()) {
-                metaData.setId(resultSet.getInt(1));
+            try (ResultSet resultSet = preparedStatement.getGeneratedKeys()) {
+                if (resultSet.next()) {
+                    metaData.setId(resultSet.getInt(1));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -50,12 +51,12 @@ public class MetaDataDao implements RepositoryDao<MetaData, Integer> {
 
     @Override
     public MetaData get(Integer id) {
-        ResultSet resultSet;
         try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY_BY_ID)) {
             preparedStatement.setInt(1, id);
-            resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                return new MetaData(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3), resultSet.getDate(4));
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return new MetaData(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3), resultSet.getDate(4));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -66,10 +67,9 @@ public class MetaDataDao implements RepositoryDao<MetaData, Integer> {
 
     @Override
     public List<MetaData> getAll() {
-        ResultSet resultSet;
         List<MetaData> metaDatas = new ArrayList<>();
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY)) {
-            resultSet = preparedStatement.executeQuery();
+        try (Statement preparedStatement = connection.createStatement();
+             ResultSet resultSet = preparedStatement.executeQuery(SELECT_QUERY)) {
             while (resultSet.next()) {
                 metaDatas.add(new MetaData(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3), resultSet.getDate(4)));
             }

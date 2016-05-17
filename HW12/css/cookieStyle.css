@@ -1,0 +1,32 @@
+body{
+    background-image: url("resorces/background.jpg");
+    font-family: Verdana,Arial,sans-serif;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+#cookie-table {
+    color: navy;
+    background-color: whitesmoke;
+}
+td.checkBoxPlace{
+    text-align: center;
+}
+
+td.registration-form{
+    text-align: right;
+    color: navy;
+}
+
+.errors {
+    color: red;
+}
+
+#prediction{
+    color: navy;
+    text-shadow: 3px 3px 5px #000000;
+    font-size: 250%;
+}

@@ -5,7 +5,11 @@ import com.epam.task2.exc.DataAccessException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Created by Olga Kramska on 09-May-16.
@@ -40,12 +44,12 @@ public class CookieDBRepository {
     }
 
     public Cookie getCookie(int id) {
-        ResultSet resultSet;
         try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY_BY_ID)) {
             preparedStatement.setInt(1, id);
-            resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                return new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -67,10 +71,8 @@ public class CookieDBRepository {
     }
 
     public void updateUser(String oldCookie, String newCookie) {
-        ResultSet resultSet;
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY,
-                ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
-            resultSet = preparedStatement.executeQuery();
+        try (Statement preparedStatement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+             ResultSet resultSet = preparedStatement.executeQuery(SELECT_QUERY)) {
             while (resultSet.next()) {
                 if (oldCookie.equals(resultSet.getString("COOKIE"))) {
                     resultSet.updateString("COOKIE", newCookie);

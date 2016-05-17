@@ -39,9 +39,10 @@ public class CookieDao implements RepositoryDao<Cookie, Integer> {
             preparedStatement.setString(1, cookie.getName());
             preparedStatement.setString(2, cookie.getPrediction());
             preparedStatement.executeUpdate();
-            ResultSet set = preparedStatement.getGeneratedKeys();
-            if (set.next()) {
-                cookie.setId(set.getInt(1));
+            try (ResultSet set = preparedStatement.getGeneratedKeys()) {
+                if (set.next()) {
+                    cookie.setId(set.getInt(1));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -51,12 +52,12 @@ public class CookieDao implements RepositoryDao<Cookie, Integer> {
 
     @Override
     public Cookie get(Integer id) {
-        ResultSet resultSet;
         try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY_BY_ID)) {
             preparedStatement.setInt(1, id);
-            resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                return new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    return new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
+                }
             }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
@@ -67,13 +68,12 @@ public class CookieDao implements RepositoryDao<Cookie, Integer> {
 
     @Override
     public List<Cookie> getAll() {
-        ResultSet resultSet;
         List<Cookie> cookies = new ArrayList<>();
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY)) {
-            resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                cookies.add(new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3)));
-            }
+        try (Statement preparedStatement = connection.createStatement();
+             ResultSet resultSet = preparedStatement.executeQuery(SELECT_QUERY)) {
+                while (resultSet.next()) {
+                    cookies.add(new Cookie(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3)));
+                }
         } catch (SQLException e) {
             LOGGER.error(e.getMessage(), e);
             throw new DataAccessException(e.getMessage());
@@ -98,25 +98,30 @@ public class CookieDao implements RepositoryDao<Cookie, Integer> {
     public void delete(Integer id) {
         try {
             connection.setAutoCommit(false);
-            try (PreparedStatement preparedStatementCookies = connection.prepareStatement(DELETE_QUERY_COOKIES);
-            PreparedStatement preparedStatementMetaData = connection.prepareStatement(DELETE_QUERY_METADATA)) {
-                preparedStatementMetaData.setInt(1, id);
-                preparedStatementMetaData.executeUpdate();
-
-                preparedStatementCookies.setInt(1, id);
-                preparedStatementCookies.executeUpdate();
-
-                connection.commit();
-            } catch (SQLException e) {
-                connection.rollback();
-                LOGGER.error(e.getMessage(), e);
-                throw new DataAccessException(e.getMessage());
-            } finally {
-                connection.setAutoCommit(true);
-            }
+            delete(id, DELETE_QUERY_METADATA);
+            delete(id, DELETE_QUERY_COOKIES);
+            connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException e1) {
+                LOGGER.error(e1.getMessage(), e1);
+            }
             LOGGER.error(e.getMessage(), e);
             throw new DataAccessException(e.getMessage());
+        } finally {
+            try {
+                connection.setAutoCommit(true);
+            } catch (SQLException e) {
+                LOGGER.error(e.getMessage(), e);
+            }
+        }
+    }
+
+    private void delete(Integer id, String query) throws SQLException {
+        try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
         }
     }
 }
